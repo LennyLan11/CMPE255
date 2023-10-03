@@ -1,4 +1,7 @@
-import os
+import streamlit as st
+import pandas as pd
+from google.cloud import bigquery
 
-# Set the path to your service account key JSON file
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '/path/to/your/service_account_key.json'
+# Initialize the BigQuery client
+client = bigquery.Client()
+
